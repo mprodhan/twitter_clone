@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'twitteruser.apps.TwitteruserConfig',
     'tweet.apps.TweetConfig',
     'authentication.apps.AuthenticationConfig',
-    'authentication.apps.NotificationConfig'
+    'notification.apps.NotificationConfig'
 
 ]
 
