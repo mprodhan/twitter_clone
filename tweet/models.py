@@ -4,8 +4,8 @@ from twitteruser.models import TwitterUser
 
 class Tweet(models.Model):
     twitteruser = models.ForeignKey(TwitterUser, on_delete=models.CASCADE)
-    message = models.TextField()
+    tweet = models.TextField(max_length=140)
     post_date = models.DateTimeField(default=timezone.now)
 
     def __str__(self):
-        return f'{self.twitteruser} - {self.message} - {self.post_date}'
+        return f'{self.twitteruser} - {self.tweet} - {self.post_date}'
